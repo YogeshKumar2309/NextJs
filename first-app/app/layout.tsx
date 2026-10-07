@@ -22,11 +22,11 @@ export default function RootLayout({ children }: { children: ReactNode}) {
               <Link href="/contect"  style={{padding: "25px"}}>Contect</Link>
               <Link href="/dashboard"  style={{padding: "25px"}}>Dashboard</Link>
               <Link href="/blog"  style={{padding: "25px"}}>Blog</Link>
+              <Link href="/products"  style={{padding: "25px"}}>Products</Link>
             </nav>
           </header>
     {children}
-    
-      <div >My footer</div>
+   
     </body>
 
     </html>
