@@ -1,6 +1,13 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import './globals.css';
+import {Inter} from "next/font/google";
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400","700"],
+  display: "swap",
+})
 
 export default function RootLayout({ children }: { children: ReactNode}) {
   return (
@@ -14,9 +21,9 @@ export default function RootLayout({ children }: { children: ReactNode}) {
           </title>
           
           </head>
-            <body >
+            <body className={inter.className}>
           <header>
-            <nav style={{backgroundColor: "#ffff00", padding: "10px"  }}>
+            <nav >
               <Link href="/"  style={{padding: "25px"}}>Home</Link>
               <Link href="/about"  style={{padding: "25px"}}>About</Link>
               <Link href="/contect"  style={{padding: "25px"}}>Contect</Link>

@@ -1,9 +1,10 @@
 
 
-const page = () => {
+const AboutPage = () => {
+
   return (
-    <div>about page</div>
+ <div className="bg-amber-500">about page</div>
   )
 }
 
-export default page
+export default AboutPage
